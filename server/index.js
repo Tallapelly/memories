@@ -15,7 +15,7 @@ app.use(cors());
 app.use('/posts',postRoutes);
 app.use('/user',userRoutes)
 //const CONNECTION_URL = 'mongodb+srv://Srishanth:Srishanth123@cluster0.50d7hjg.mongodb.net/?retryWrites=true&w=majority';
-var PORT = process.env.PORT || 5000;
+var PORT = process.env.PORT || 3000;
 mongoose.connect(process.env.CONNECTION_URL)
 .then(()=> app.listen(PORT,() => console.log(`Server running on port : ${PORT}`)))
 .catch((error)=> console.log(error.message) );
