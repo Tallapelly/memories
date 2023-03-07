@@ -1,6 +1,14 @@
 {
   "dependencies": {
     "@material-ui/core": "^4.12.4",
-    "bcryptjs": "^2.4.3"
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.6.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "cd server && npm start ",
+    "client": "cd client && npm start ",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   }
+
 }
